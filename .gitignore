@@ -1,0 +1,33 @@
+﻿# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local files
+*.local
