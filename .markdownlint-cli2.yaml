@@ -1,11 +1,14 @@
 
 config:
-  line-length: false
-  no-inline-html: false
-  no-duplicate-heading:
+  default: true
+
+  MD013: false
+  MD033: false
+  MD024:
     siblings_only: true
-  no-trailing-spaces:
+  MD009:
     br_spaces: 0
+  MD060: false
 
 ignores:
   - "**/node_modules/**"
