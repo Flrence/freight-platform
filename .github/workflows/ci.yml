@@ -70,7 +70,10 @@ jobs:
           fi
           echo "Секретов не обнаружено"
 
-      - name: Проверить оформление Markdown
-        uses: DavidAnson/markdownlint-cli2-action@v16
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          globs: '**/*.md'
+          node-version: '24'
+
+      - name: Lint Markdown
+        run: npx --yes markdownlint-cli2@0.20.0 "**/*.md"
